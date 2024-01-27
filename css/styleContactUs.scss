@@ -1,0 +1,174 @@
+@import "variables";
+
+// ----- Header (modified) -----
+header {
+  background: #f8fbff;
+  .container {
+    background: #f8fbff;
+  }
+
+  li:first-child {
+    font-weight: 400 !important;
+  }
+}
+// ----- Section: Contact -----
+.contact {
+  .container {
+    margin-top: 150px;
+    .wrapper {
+      border-radius: 10px;
+      background: #fff;
+      box-shadow: 0px 4px 64px 0px rgba(35, 40, 105, 0.08);
+      max-width: 1200px;
+      height: 561px;
+      display: flex;
+      gap: 60px;
+      padding: 50px 83px 58px 72px;
+
+      .contact-text {
+        width: 50%;
+        h4 {
+          font-size: $big-body;
+          font-weight: 500;
+          line-height: 28px;
+          color: $pink;
+          margin-bottom: 16px;
+        }
+        h2 {
+          font-size: $title;
+          font-weight: 600;
+          line-height: 66px;
+          letter-spacing: -2px;
+          margin-bottom: 43px;
+        }
+        .info {
+          display: flex;
+          gap: 15px;
+          margin-bottom: 32px;
+          .circle {
+				flex-shrink: 0;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background-color: $circle;
+            text-align: center;
+
+            .element-svg {
+              margin-top: 10px;
+              width: 16px;
+              height: 16px;
+            }
+          }
+          p,
+          a {
+            font-size: $big-body;
+            font-weight: 400;
+            line-height: 32px;
+            color: $gray;
+          }
+        }
+      }
+      .contact-input {
+        width: 50%;
+        .inputField {
+          display: block;
+          border: 1px solid #ededed;
+          background: $notice;
+          caret-color: $blue;
+          width: 100%;
+          height: 50px;
+          padding-left: 20px;
+          padding-right: 20px;
+          margin-top: 40px;
+
+          &::placeholder {
+            color: $gray;
+            font-size: $small-body;
+            font-weight: 400;
+            line-height: 30px;
+          }
+        }
+        .email-phone {
+          display: flex;
+          gap: 30px;
+        }
+        .questions {
+          display: block;
+          margin-top: 40px;
+          padding-left: 20px;
+          padding-right: 20px;
+          padding-top: 20px;
+          width: 100%;
+          height: 140px;
+          border: 1px solid #ededed;
+          background: $notice;
+          caret-color: $blue;
+
+          &::placeholder {
+            color: $gray;
+            font-size: $small-body;
+            font-weight: 400;
+            line-height: 30px;
+          }
+        }
+        .button-sendMessage {
+          margin-top: 40px;
+          border-radius: 5px;
+          background: $blue;
+          padding: 18px 52px;
+          border: none;
+          color: $notice;
+          text-align: center;
+          font-size: $small-body;
+          font-weight: 600;
+          line-height: 20px;
+          letter-spacing: -0.28px;
+        }
+      }
+    }
+  }
+}
+// ----- Section: Contact Media -----
+@media screen and(max-width:1110px) {
+	.contact {
+	  .container {
+		 .wrapper {
+			flex-direction: column;
+			height: 1030px;
+			gap: 0px;
+			.contact-text {
+			  width: 100%;
+			}
+			.contact-input {
+			  width: 100%;
+			}
+		 }
+	  }
+	}
+ }
+@media screen and(max-width:700px) {
+  .contact {
+    .container {
+      margin-top: 100px;
+      .wrapper {
+        padding: 50px 35px 30px 35px;
+        .contact-text {
+          h2 {
+            font-size: $media-title;
+            line-height: 52px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and(max-width:400px) {
+  .contact {
+    .container {
+      .wrapper {
+        height: 1070px;
+        padding: 30px 33px 28px 32px;
+      }
+    }
+  }
+}

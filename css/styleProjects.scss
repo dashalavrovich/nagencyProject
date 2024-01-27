@@ -1,0 +1,75 @@
+@import "variables";
+
+// ----- Header (modified) -----
+header {
+  background: #f8fbff;
+  .container {
+    background: #f8fbff;
+  }
+
+  li:first-child {
+    font-weight: 400 !important;
+  }
+  li:nth-of-type(4) {
+    font-weight: 600 !important;
+  }
+}
+// ----- Section: Trusted By -----
+.trustedBy {
+  .container {
+    margin-top: 172px;
+    h4 {
+      color: $pink;
+      font-size: $big-body;
+      font-weight: 500;
+      line-height: 28px;
+      text-align: center;
+    }
+    .elements-text {
+      margin-top: 32px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+		justify-content:center;
+
+		svg:nth-of-type(n){
+			margin-left: 30px;
+			margin-right: 30px;
+		}
+
+      .element-svg-layers {
+        width: 150px;
+        height: 48px;
+        margin-bottom: 15px;
+      }
+      .element-svg-sisyphus {
+        width: 175px;
+        height: 48px;
+        margin-bottom: 15px;
+      }
+      .element-svg-circooles {
+        width: 187px;
+        height: 48px;
+        margin-bottom: 15px;
+      }
+      .element-svg-catalog {
+        width: 165px;
+        height: 48px;
+        margin-bottom: 15px;
+      }
+      .element-svg-quotient {
+        width: 193px;
+        height: 48px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+// ----- Section: Trusted By Media -----
+@media screen and (max-width: 700px) {
+  .trustedBy {
+    .container {
+      margin-top: 100px;
+    }
+  }
+}

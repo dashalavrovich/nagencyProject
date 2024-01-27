@@ -1,0 +1,202 @@
+header {
+  background: #f8fbff; }
+  header .container {
+    background: #f8fbff; }
+  header li:first-child {
+    font-weight: 400 !important; }
+  header li:nth-of-type(2) {
+    font-weight: 600 !important; }
+
+.mainAboutUs .container {
+  padding-top: 150px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; }
+  .mainAboutUs .container .block-text {
+    width: 50%;
+    flex-grow: 1; }
+    .mainAboutUs .container .block-text h4 {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 28px;
+      color: #F0899C;
+      margin-bottom: 16px; }
+    .mainAboutUs .container .block-text h2 {
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 66px;
+      letter-spacing: -2px;
+      margin-bottom: 24px; }
+    .mainAboutUs .container .block-text .about-text {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 32px;
+      color: #657790;
+      margin-bottom: 38px; }
+    .mainAboutUs .container .block-text .definition {
+      display: flex; }
+    .mainAboutUs .container .block-text .number-definition {
+      padding-right: 78px; }
+      .mainAboutUs .container .block-text .number-definition p:nth-of-type(1) {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 35px;
+        letter-spacing: -1px;
+        color: #00B5E2; }
+      .mainAboutUs .container .block-text .number-definition p:nth-of-type(2) {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 32px;
+        color: #657790;
+        margin-top: 8px;
+        margin-bottom: 38px; }
+    .mainAboutUs .container .block-text a {
+      display: block;
+      width: 145px;
+      height: 56px; }
+    .mainAboutUs .container .block-text .button-service {
+      padding: 18px 28px;
+      background-color: #00B5E2;
+      border-radius: 5px;
+      font-size: 14px;
+      color: #F8FAFC;
+      font-weight: 600;
+      line-height: 20px;
+      transition: all 0.4s ease-in-out;
+      text-align: center; }
+      .mainAboutUs .container .block-text .button-service:hover {
+        background-color: #F0899C;
+        transform: scale(1.1); }
+  .mainAboutUs .container .block-image {
+    text-align: center;
+    width: 50%;
+    flex-grow: 1;
+    flex-wrap: wrap; }
+    .mainAboutUs .container .block-image img:nth-of-type(n) {
+      padding-top: 27px; }
+
+@media screen and (max-width: 860px) {
+  .block-image {
+    display: none; } }
+@media screen and (max-width: 700px) {
+  .mainAboutUs .container {
+    padding-top: 100px; }
+    .mainAboutUs .container .block-text h2 {
+      font-size: 32px;
+      line-height: 52px; } }
+.albertWilliam .container {
+  margin-top: 150px;
+  max-width: 1059px;
+  display: flex;
+  gap: 83px; }
+  .albertWilliam .container img {
+    width: 328px;
+    height: 468px; }
+  .albertWilliam .container .AlbertWilliam-text h2 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 66px;
+    letter-spacing: -2px;
+    margin-bottom: 24px; }
+  .albertWilliam .container .AlbertWilliam-text p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #657790; }
+  .albertWilliam .container .AlbertWilliam-text p:nth-of-type(2) {
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: -1px;
+    color: #00B5E2; }
+  .albertWilliam .container .AlbertWilliam-text p:nth-of-type(3) {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #657790;
+    opacity: 0.8; }
+
+@media screen and (max-width: 900px) {
+  .albertWilliam .container {
+    flex-direction: column; }
+    .albertWilliam .container img {
+      margin: 0 auto; } }
+@media screen and (max-width: 700px) {
+  .albertWilliam .container {
+    margin-top: 100px; }
+    .albertWilliam .container .AlbertWilliam-text h2 {
+      font-size: 32px;
+      line-height: 52px; } }
+@media screen and (max-width: 400px) {
+  .albertWilliam .container img {
+    width: 240px;
+    height: 342px; } }
+.numberBlock .container {
+  margin-top: 150px; }
+  .numberBlock .container .wrapper {
+    border-radius: 32px;
+    background: #fef3f5;
+    max-width: 1200px;
+    height: 252px; }
+  .numberBlock .container .number-block {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 69px;
+    padding-bottom: 69px; }
+    .numberBlock .container .number-block .number-definition p:nth-of-type(1) {
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 66px;
+      letter-spacing: -2px;
+      text-align: center;
+      margin-bottom: 16px; }
+    .numberBlock .container .number-block .number-definition p:nth-of-type(2) {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 32px;
+      color: #657790;
+      text-align: center; }
+
+@media screen and (max-width: 700px) {
+  .numberBlock .container {
+    margin-top: 100px; }
+    .numberBlock .container .wrapper {
+      height: 722px;
+      background: #fef3f5; }
+      .numberBlock .container .wrapper .number-block {
+        flex-direction: column;
+        padding-top: 0; }
+        .numberBlock .container .wrapper .number-block p:nth-of-type(1) {
+          margin-top: 100px; } }
+.ourVisions .container {
+  margin-top: 150px; }
+  .ourVisions .container h4 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #F0899C;
+    text-align: center;
+    margin-bottom: 16px; }
+  .ourVisions .container h2 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 66px;
+    letter-spacing: -2px;
+    text-align: center;
+    margin-bottom: 32px; }
+  .ourVisions .container p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #657790;
+    text-align: center; }
+
+@media screen and (max-width: 700px) {
+  .ourVisions .container {
+    margin-top: 100px; }
+    .ourVisions .container h2 {
+      font-size: 32px;
+      line-height: 52px; } }
+
+/*# sourceMappingURL=styleAboutUs.css.map */

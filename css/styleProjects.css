@@ -1,0 +1,52 @@
+header {
+  background: #f8fbff; }
+  header .container {
+    background: #f8fbff; }
+  header li:first-child {
+    font-weight: 400 !important; }
+  header li:nth-of-type(4) {
+    font-weight: 600 !important; }
+
+.trustedBy .container {
+  margin-top: 172px; }
+  .trustedBy .container h4 {
+    color: #F0899C;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: center; }
+  .trustedBy .container .elements-text {
+    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center; }
+    .trustedBy .container .elements-text svg:nth-of-type(n) {
+      margin-left: 30px;
+      margin-right: 30px; }
+    .trustedBy .container .elements-text .element-svg-layers {
+      width: 150px;
+      height: 48px;
+      margin-bottom: 15px; }
+    .trustedBy .container .elements-text .element-svg-sisyphus {
+      width: 175px;
+      height: 48px;
+      margin-bottom: 15px; }
+    .trustedBy .container .elements-text .element-svg-circooles {
+      width: 187px;
+      height: 48px;
+      margin-bottom: 15px; }
+    .trustedBy .container .elements-text .element-svg-catalog {
+      width: 165px;
+      height: 48px;
+      margin-bottom: 15px; }
+    .trustedBy .container .elements-text .element-svg-quotient {
+      width: 193px;
+      height: 48px;
+      margin-bottom: 15px; }
+
+@media screen and (max-width: 700px) {
+  .trustedBy .container {
+    margin-top: 100px; } }
+
+/*# sourceMappingURL=styleProjects.css.map */

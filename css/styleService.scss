@@ -1,0 +1,151 @@
+@import "variables";
+
+// ----- Header (modified) -----
+header {
+  background: #f8fbff;
+  .container {
+    background: #f8fbff;
+  }
+
+  li:first-child {
+    font-weight: 400 !important;
+  }
+  li:nth-of-type(3) {
+    font-weight: 600 !important;
+  }
+}
+
+// ----- Section: Our Service (on page Service) -----
+.service {
+  .container {
+    margin-top: 150px;
+    h4 {
+      color: $pink;
+      font-size: $big-body;
+      font-weight: 500;
+      line-height: 28px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: $title;
+      font-weight: 600;
+      line-height: 66px;
+      letter-spacing: -2px;
+      text-align: center;
+      margin-top: 16px;
+      margin-bottom: 64px;
+    }
+    .image-text {
+      display: flex;
+      gap: 108px;
+      .text-block {
+        .element-svg {
+          margin-top: 32px;
+          width: 48px;
+          height: 48px;
+        }
+        h3 {
+          margin-top: 16px;
+          font-size: $title;
+          font-weight: 600;
+          line-height: 66px;
+          letter-spacing: -2px;
+        }
+        p {
+          font-size: $big-body;
+          font-weight: 400;
+          line-height: 32px;
+          color: $gray;
+          margin-top: 24px;
+        }
+      }
+    }
+
+    .text-image {
+      margin-top: 100px;
+      margin-bottom: 100px;
+      display: flex;
+      gap: 108px;
+      .text-block {
+        .element-svg {
+          margin-top: 32px;
+          width: 48px;
+          height: 48px;
+        }
+        h3 {
+          margin-top: 16px;
+          font-size: $title;
+          font-weight: 600;
+          line-height: 66px;
+          letter-spacing: -2px;
+        }
+        p {
+          font-size: $big-body;
+          font-weight: 400;
+          line-height: 32px;
+          color: $gray;
+          margin-top: 24px;
+        }
+      }
+    }
+  }
+}
+// ----- Section: Our Service (on page Service) Media -----
+@media screen and (max-width: 1100px) {
+  .service {
+    .container {
+      .image-text {
+        flex-direction: column;
+        gap: 32px;
+        .text-block {
+          img {
+            margin-top: 0;
+          }
+        }
+      }
+      .text-image {
+        flex-direction: column;
+        margin-top: 64px;
+        margin-bottom: 64px;
+        gap: 32px;
+        .text-block {
+          order: 2;
+          img {
+            margin-top: 0;
+          }
+        }
+        img {
+          order: 1;
+        }
+      }
+    }
+  }
+}
+@media screen and(max-width:700px) {
+  .service {
+    .container {
+      margin-top: 100px;
+      h2 {
+        font-size: $media-title;
+        line-height: 52px;
+      }
+      .image-text {
+        .text-block {
+          h3 {
+            font-size: $small-title;
+            line-height: 35px;
+          }
+        }
+      }
+      .text-image {
+        .text-block {
+          h3 {
+            font-size: $small-title;
+            line-height: 35px;
+          }
+        }
+      }
+    }
+  }
+}

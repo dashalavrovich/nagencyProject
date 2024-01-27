@@ -1,0 +1,302 @@
+@import "variables";
+
+// ----- Header (modified) -----
+header {
+  background: #f8fbff;
+  .container {
+    background: #f8fbff;
+  }
+
+  li:first-child {
+    font-weight: 400 !important;
+  }
+  li:nth-of-type(2) {
+    font-weight: 600 !important;
+  }
+}
+// ----- Section: About us -----
+.mainAboutUs {
+  .container {
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    .block-text {
+      width: 50%;
+      flex-grow: 1;
+      h4 {
+        font-size: $big-body;
+        font-weight: 500;
+        line-height: 28px;
+        color: $pink;
+        margin-bottom: 16px;
+      }
+      h2 {
+        font-size: $title;
+        font-weight: 600;
+        line-height: 66px;
+        letter-spacing: -2px;
+        margin-bottom: 24px;
+      }
+      .about-text {
+        font-size: $big-body;
+        font-weight: 400;
+        line-height: 32px;
+        color: $gray;
+        margin-bottom: 38px;
+      }
+
+      .definition {
+        display: flex;
+      }
+      .number-definition {
+        padding-right: 78px;
+        p:nth-of-type(1) {
+          font-size: $small-title;
+          font-weight: 600;
+          line-height: 35px;
+          letter-spacing: -1px;
+          color: $blue;
+        }
+        p:nth-of-type(2) {
+          font-size: $big-body;
+          font-weight: 400;
+          line-height: 32px;
+          color: $gray;
+          margin-top: 8px;
+          margin-bottom: 38px;
+        }
+      }
+
+      a {
+        display: block;
+        width: 145px;
+        height: 56px;
+      }
+      .button-service {
+        padding: 18px 28px;
+        background-color: $blue;
+        border-radius: 5px;
+        font-size: $small-body;
+        color: $white;
+        font-weight: 600;
+        line-height: 20px;
+        transition: all 0.4s ease-in-out;
+        text-align: center;
+
+        &:hover {
+          background-color: $pink;
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    .block-image {
+      text-align: center;
+      width: 50%;
+      flex-grow: 1;
+      flex-wrap: wrap;
+      img:nth-of-type(n) {
+        padding-top: 27px;
+      }
+    }
+  }
+}
+// ----- Section: About us Media-----
+@media screen and (max-width: 860px) {
+  .block-image {
+    display: none;
+  }
+}
+@media screen and (max-width: 700px) {
+  .mainAboutUs {
+    .container {
+      padding-top: 100px;
+      .block-text {
+        h2 {
+          font-size: $media-title;
+          line-height: 52px;
+        }
+      }
+    }
+  }
+}
+// ----- Section: Albert William -----
+.albertWilliam {
+  .container {
+    margin-top: 150px;
+    max-width: 1059px;
+    display: flex;
+    gap: 83px;
+
+    img {
+      width: 328px;
+      height: 468px;
+    }
+
+    .AlbertWilliam-text {
+      h2 {
+        font-size: $title;
+        font-weight: 600;
+        line-height: 66px;
+        letter-spacing: -2px;
+        margin-bottom: 24px;
+      }
+      p {
+        font-size: $big-body;
+        font-weight: 400;
+        line-height: 32px;
+        color: $gray;
+      }
+
+      p:nth-of-type(2) {
+        margin-top: 30px;
+        font-size: $small-title;
+        font-weight: 600;
+        line-height: 35px;
+        letter-spacing: -1px;
+        color: $blue;
+      }
+      p:nth-of-type(3) {
+        font-size: $body;
+        font-weight: 500;
+        line-height: 24px;
+        color: $gray;
+        opacity: 0.8;
+      }
+    }
+  }
+}
+// ----- Section: Albert William Media-----
+@media screen and (max-width: 900px) {
+  .albertWilliam {
+    .container {
+      flex-direction: column;
+      img {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  .albertWilliam {
+    .container {
+      margin-top: 100px;
+      .AlbertWilliam-text {
+        h2 {
+          font-size: $media-title;
+          line-height: 52px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .albertWilliam {
+    .container {
+      img {
+        width: 240px;
+        height: 342px;
+      }
+    }
+  }
+}
+// ----- Section: Numbers -----
+.numberBlock {
+  .container {
+    margin-top: 150px;
+
+    .wrapper {
+      border-radius: 32px;
+      background: #fef3f5;
+      max-width: 1200px;
+      height: 252px;
+    }
+    .number-block {
+      display: flex;
+      justify-content: space-around;
+      padding-top: 69px;
+      padding-bottom: 69px;
+      .number-definition {
+        p:nth-of-type(1) {
+          font-size: $title;
+          font-weight: 600;
+          line-height: 66px;
+          letter-spacing: -2px;
+          text-align: center;
+          margin-bottom: 16px;
+        }
+        p:nth-of-type(2) {
+          font-size: $big-body;
+          font-weight: 400;
+          line-height: 32px;
+          color: $gray;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+// ----- Section: Numbers Media -----
+@media screen and (max-width: 700px) {
+  .numberBlock {
+    .container {
+      margin-top: 100px;
+      .wrapper {
+        height: 722px;
+        background: #fef3f5;
+
+        .number-block {
+          flex-direction: column;
+          padding-top: 0;
+
+          p:nth-of-type(1) {
+            margin-top: 100px;
+          }
+        }
+      }
+    }
+  }
+}
+// ----- Section: Our visions -----
+.ourVisions {
+  .container {
+    margin-top: 150px;
+    h4 {
+      font-size: $big-body;
+      font-weight: 500;
+      line-height: 28px;
+      color: $pink;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    h2 {
+      font-size: $title;
+      font-weight: 600;
+      line-height: 66px;
+      letter-spacing: -2px;
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    p {
+      font-size: $big-body;
+      font-weight: 400;
+      line-height: 32px;
+      color: $gray;
+      text-align: center;
+    }
+  }
+}
+// ----- Section: Our visions Media -----
+@media screen and (max-width: 700px) {
+  .ourVisions {
+    .container {
+      margin-top: 100px;
+      h2 {
+        font-size: $media-title;
+        line-height: 52px; 
+      }
+    }
+  }
+}
