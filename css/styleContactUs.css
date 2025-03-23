@@ -13,7 +13,7 @@ header {
     -webkit-box-shadow: 0px 4px 64px 0px rgba(35, 40, 105, 0.08);
             box-shadow: 0px 4px 64px 0px rgba(35, 40, 105, 0.08);
     max-width: 1200px;
-    height: 561px;
+    min-height: 610px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -28,7 +28,7 @@ header {
         color: #F0899C;
         margin-bottom: 16px; }
       .contact .container .wrapper .contact-text h2 {
-        font-size: 48px;
+        font-size: 44px;
         font-weight: 600;
         line-height: 66px;
         letter-spacing: -2px;
@@ -68,7 +68,7 @@ header {
         height: 50px;
         padding-left: 20px;
         padding-right: 20px;
-        margin-top: 40px; }
+        margin-top: 30px; }
         .contact .container .wrapper .contact-input .inputField::-webkit-input-placeholder {
           color: #657790;
           font-size: 14px;
@@ -96,7 +96,7 @@ header {
         gap: 30px; }
       .contact .container .wrapper .contact-input .questions {
         display: block;
-        margin-top: 40px;
+        margin-top: 30px;
         padding-left: 20px;
         padding-right: 20px;
         padding-top: 20px;
@@ -125,8 +125,8 @@ header {
           font-size: 14px;
           font-weight: 400;
           line-height: 30px; }
-      .contact .container .wrapper .contact-input .button-sendMessage {
-        margin-top: 40px;
+      .contact .container .wrapper .contact-input .form_btn {
+        margin-top: 10px;
         border-radius: 5px;
         background: #00B5E2;
         padding: 18px 52px;
@@ -136,7 +136,12 @@ header {
         font-size: 14px;
         font-weight: 600;
         line-height: 20px;
-        letter-spacing: -0.28px; }
+        letter-spacing: -0.28px; 
+        transition: all 0.4s ease-in-out;
+        cursor: pointer;
+      }
+      .form_btn:hover {
+        transform: scale(1.05); }
 
 @media screen and (max-width: 1110px) {
   .contact .container .wrapper {
@@ -163,4 +168,8 @@ header {
     height: 1070px;
     padding: 30px 33px 28px 32px; } }
 
+    .form_error{
+      font-size: 12px;
+      color:red
+    }
 /*# sourceMappingURL=styleContactUs.css.map */

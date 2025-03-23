@@ -27,13 +27,14 @@
         padding: 18px 28px;
         background-color: #00B5E2;
         border-radius: 5px;
-        width: 131px;
+        width: 175px;
         height: 56px;
         font-size: 14px;
         color: #F8FAFC;
         margin-bottom: 80px;
         line-height: 20px;
-        transition: all 0.4s ease-in-out; }
+        transition: all 0.4s ease-in-out;
+        text-align: center; }
         .main .container .main-left a .button-contact-2:hover {
           background-color: #F0899C;
           transform: scale(1.1); }
@@ -197,10 +198,13 @@
     justify-content: space-between; }
     .ourService .container .service-items .item {
       width: 381px;
-      height: 364px;
+      min-height: 364px;
       padding: 30px 57px 30px 37px;
       border-radius: 10px;
       background: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       box-shadow: 0px 4px 64px 0px rgba(35, 40, 105, 0.08); }
 @keyframes motion {
   from {
@@ -305,6 +309,9 @@
         line-height: 32px;
         color: #657790; }
 
+        @media screen and (max-width: 1130px) {
+          .ourSolutions .container{display: none;}}
+        
 @media screen and (max-width: 1130px) {
   .ourSolutions .container .solution-items .verical-line {
     height: 380.253px; }

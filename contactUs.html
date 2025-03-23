@@ -17,7 +17,7 @@
       src="https://kit.fontawesome.com/1ca02fc829.js"
       crossorigin="anonymous"
     ></script>
-    <title>Contact Us</title>
+    <title>Контакты</title>
   </head>
   <body>
     <!-- Header -->
@@ -37,26 +37,24 @@
 
         <div class="menu">
           <ul>
-            <li><a href="home.html" title="Home">Home</a></li>
-            <li><a href="aboutUs.html" title="About Us">About</a></li>
-            <li><a href="service.html" title="Service">Service</a></li>
-            <li><a href="projects.html" title="Our Projects">Projects</a></li>
+            <li><a href="home.html" title="Home">Главная</a></li>
+            <li><a href="aboutUs.html" title="About Us">О нас</a></li>
+            <li><a href="service.html" title="Service">Услуги</a></li>
+            <li><a href="projects.html" title="Our Projects">Проекты</a></li>
           </ul>
         </div>
 
-        <a href="contactUs.html" title="Contact Us"
-          ><div class="button-contact">Contact Us</div></a
-        >
+        <a href="contactUs.html" title="Contact Us"><div class="button-contact">Контакты</div></a>
       </div>
     </header>
     <!-- Section: Main title -->
     <section class="mainTitle">
       <div class="container">
-        <h1>Contact Us</h1>
+        <h1>Контакты</h1>
         <p class="nav">
-          <a href="home.html" title="Home">Home</a>
+          <a href="home.html" title="Home">Главная</a>
           <span>&#47;</span>
-          <a href="aboutUs.html" title="Contact Us">Contact Us</a>
+          <a href="aboutUs.html" title="Contact Us">Контакты</a>
         </p>
       </div>
     </section>
@@ -65,8 +63,8 @@
       <div class="container">
         <div class="wrapper">
           <div class="contact-text">
-            <h4>Contact us</h4>
-            <h2>Contact Our Team, Feel free to talk about anything.</h2>
+            <h4>Оставьте заявку</h4>
+            <h2>Наши менеджеры помогут определить какой сайт Вам нужен</h2>
             <div class="info">
               <div class="circle">
                 <svg
@@ -77,7 +75,7 @@
                   <use xlink:href="/icons-sprites.svg#pin" x="0" y="0" />
                 </svg>
               </div>
-              <p>2715 Ash Dr. San Jose, South Dakota 83475</p>
+              <p>Тимирязева 65В, офис 1409</p>
             </div>
             <div class="info">
               <div class="circle">
@@ -89,7 +87,7 @@
                   <use xlink:href="/icons-sprites.svg#call" x="0" y="0" />
                 </svg>
               </div>
-              <a href="tel:&#40;252&#41; 555&#8208;0126" title="Telephone">&#40;252&#41; 555&#8208;0126</a>
+              <a href="tel:&#40;29&#41; 623&#8208;7515" title="Telephone">+375 &#40;29&#41; 623&#8208;75&#8208;15</a>
             </div>
             <div class="info">
               <div class="circle">
@@ -101,123 +99,121 @@
                   <use xlink:href="/icons-sprites.svg#email" x="0" y="0" />
                 </svg>
               </div>
-              <p>nagency&#64;gmail.com</p>
+              <p>alavir&#64;yandex.by</p>
             </div>
           </div>
           <div class="contact-input">
-            <form
-              name="INFO"
-				      method="post"
-              action="http://fe.it-academy.by/TestForm.php"
-              novalidate
-				      target="_blank"
+            <form 
+            id="form" onsubmit="submitForm(event)" name="INFO"
             >
               <input
                 type="text"
-                name="FIO"
+                name="name"
                 class="inputField"
-                placeholder="Name"
+                placeholder="ФИО"
               />
-              <div class="email-phone">
+              <span class="form_error" data-for="name"></span>
+              <!-- <div class="email-phone"> -->
                 <input
-                  type="email"
-                  name="EMAIL"
+                  type="text"
+                  name="email"
                   class="inputField"
                   placeholder="Email"
                 />
+                <span class="form_error" data-for="email"></span>
                 <input
-                  type="text"
-                  name="TEL"
+                  type="tel"
+                  name="phone"
                   class="inputField"
-                  placeholder="Phone"
+                  placeholder="Телефон"
                 />
-              </div>
-              <textarea name="QUESTIONS" class="questions" placeholder="Your Quenstions" >
-              </textarea>
+                <span class="form_error" data-for="phone"></span>
+              <!-- </div> -->
+              <textarea name="message" class="questions" style="height:50px" placeholder="Сообщение..."></textarea>
+              <span class="form_error" data-for="message"></span>
+              <br>
               <input
                 type="submit"
-                class="button-sendMessage"
-                value="Subscribe"
+                class="form_btn"
+                value="Отправить"
               />
+              <div class="form_send-result"></div>
             </form>
           </div>
         </div>
       </div>
     </section>
     <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="block-logo">
-          <a href="home.html" title="Home"
-            ><svg
-            class="logo-svg"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
+   <footer>
+    <div class="container">
+      <div class="block-logo">
+        <a href="home.html" title="Home"
+          ><svg
+          class="logo-svg"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+        >
+          <use xlink:href="/icons-sprites.svg#logo-nagency" x="0" y="0" />
+        </svg></a>
+        <p>
+          Компания Алавир оказывает полный цикл веб-разработки и создания сложных проектов на платформе 1С-Битрикс. 
+        </p>
+      </div>
+      <div class="block-links-help">
+        <h5>Карта сайта</h5>
+        <ul>
+          <li><a href="home.html" title="Home">Главная</a></li>
+          <li><a href="aboutUs.html" title="About Us">О нас</a></li>
+          <li><a href="service.html" title="Service">Услуги</a></li>
+          <li><a href="projects.html" title="Our Projects">Наши проекты</a></li>
+        </ul>
+      </div>
+      <div class="block-links-help">
+        <h5>Помощь</h5>
+        <ul>
+          <li><a href="home.html" title="Privacy Policy">Политика конфиденциальности</a></li>
+          <li><a href="home.html" title="Terms &amp; Conditions">Условия &amp; Положения</a></li>
+          <li><a href="contactUs.html" title="Contact us">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="block-subscribe">
+        <h5>Подписывайтесь на нас</h5>
+        <p>
+          Будьте всегда с нами на связи, чтобы не пропустить выгодные предложения и последние обновления!
+        </p>
+        <div class="text-button">
+          <form
+            method="post"
+            action="http://fe.it-academy.by/TestForm.php"
+            target="_blank"
           >
-            <use xlink:href="/icons-sprites.svg#logo-nagency" x="0" y="0" />
-          </svg></a>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididum ipsum dolor sit amet, consectetur
-            adipiscing elit, sed do eiusmod tempor incididunt
-          </p>
+            <div class="inputField">
+              <input
+                type="email"
+                class="poczta"
+                name="email"
+                placeholder="Введите свою почту"
+              />
+              <input
+                type="submit"
+                class="button-subscribe"
+                value="Подписаться"
+              />
+            </div>
+          </form>
         </div>
-        <div class="block-links-help">
-          <h5>Quick links</h5>
-          <ul>
-            <li><a href="home.html" title="Home">Home</a></li>
-            <li><a href="aboutUs.html" title="About Us">About</a></li>
-            <li><a href="service.html" title="Service">Service</a></li>
-            <li><a href="projects.html" title="Our Projects">Our Projects</a></li>
-          </ul>
-        </div>
-        <div class="block-links-help">
-          <h5>Help</h5>
-          <ul>
-            <li><a href="home.html" title="Privacy Policy">Privacy Policy</a></li>
-            <li><a href="home.html" title="Terms &amp; Conditions">Terms &amp; Conditions</a></li>
-            <li><a href="contactUs.html" title="Contact us">Contact us</a></li>
-          </ul>
-        </div>
-        <div class="block-subscribe">
-          <h5>Subscribe to newsletter</h5>
-          <p>
-            Lorem ipsum dolor sit amet, consec tetur adip iscing elit. Sit quis
-            auctor.
-          </p>
-          <div class="text-button">
-            <form
-              method="post"
-              action="http://fe.it-academy.by/TestForm.php"
-              target="_blank"
-            >
-              <div class="inputField">
-                <input
-                  type="email"
-                  class="poczta"
-                  name="email"
-                  placeholder="Enter email address"
-                />
-                <input
-                  type="submit"
-                  class="button-subscribe"
-                  value="Subscribe"
-                />
-              </div>
-            </form>
-          </div>
-          <div class="social">
-            <span>Follow us on:</span>
-            <a href="home.html" title="Discord"><i class="fa-brands fa-discord" title="Discord"></i></a>
-            <a href="home.html" title="Twitter"><i class="fa-brands fa-twitter" title="Twitter"></i></a>
-            <a href="home.html" title="Telegram"
-              ><i class="fa-brands fa-telegram" title="Telegram"></i
-            ></a>
-            <a href="home.html" title="Youtube"><i class="fa-brands fa-youtube" title="Youtube"></i></a>
-          </div>
+        <div class="social">
+          <span style="color: #657790;">Наши соцсети:</span>
+          <a href="home.html" title="Discord"><i class="fa-brands fa-discord" title="Discord"></i></a>
+          <a href="home.html" title="Twitter"><i class="fa-brands fa-twitter" title="Twitter"></i></a>
+          <a href="home.html" title="Telegram"
+            ><i class="fa-brands fa-telegram" title="Telegram"></i
+          ></a>
+          <a href="home.html" title="Youtube"><i class="fa-brands fa-youtube" title="Youtube"></i></a>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 	 <script type='text/javascript' src='validContact.js'></script>
   </body>
 </html>
