@@ -1,4 +1,4 @@
-Site for company Alavir
+Site for the company Alavir
 
 For the website to work correctly, open the terminal and navigate to the nodejs folder. Then, type the command "npm run start" in the terminal.
 
